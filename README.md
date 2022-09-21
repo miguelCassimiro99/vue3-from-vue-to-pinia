@@ -18,3 +18,8 @@ If you're having issues with running the json-server for the database, you will 
 # Run database
 npm run db
 ```
+
+
+### Challenge
+Complete the migration to Pinia
+At the end of migration we need to be capable to exclude de store/index.js file
