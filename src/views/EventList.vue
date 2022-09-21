@@ -9,18 +9,13 @@ export default {
   setup() {
     const eventStore = useEventStore()
 
-    return {
-      eventStore
-    }
-  },
+    const events = eventStore.fetchEvents()
+    console.log('events ', event)
 
-  created() {
-    this.eventStore.fetchEvents().catch(error => {
-      this.$router.push({
-        name: 'ErrorDisplay',
-        params: { error: error }
-      })
-    })
+    return {
+      eventStore,
+      events
+    }
   },
 }
 </script>

@@ -29,11 +29,35 @@ export const useEventStore = defineStore('EventStore', {
     fetchEvents() {
       return EventService.getEvents()
         .then(response => {
+          console.log('events ', response.data)
           this.events = response.data
         })
         .catch(error => {
           throw error
         })
     },
+    createEvent(event) {
+      return EventService.postEvent(event)
+        .then(() => {
+          this.events.push(event)
+        })
+        .catch(error => {
+          throw error
+        })
+    },
+    fetchEvent(id) {
+      console.log('fetchEvent');
+      const existingEvent = this.events.find(event => event.id === id);
+      if (existingEvent) {
+        return this.event = existingEvent
+      }
+      EventService.getEvent(id)
+        .then(response => {
+          this.event = response.data
+        })
+        .catch(error => {
+          throw error
+        })
+    }
   }
 })
