@@ -4,31 +4,15 @@ import { useEventStore } from '../stores/EventStore'
 export default {
   props: ['id'],
 
-  setup() {
+  async setup(props) {
     const eventStore = useEventStore()
+    console.log('props', props)
+    const event = await eventStore.fetchEvent(props.id)
 
-    return eventStore
-  },
+    console.log('props', eventStore.event)
 
-  created() {
-    this.eventStore.fetchEvent(this.id).catch(error => {
-      this.$router.push({
-        name: 'ErrorDisplay',
-        params: { error }
-      })
-    })
-    // this.$store.dispatch('fetchEvent', this.id).catch(error => {
-    //   this.$router.push({
-    //     name: 'ErrorDisplay',
-    //     params: { error: error }
-    //   })
-    // })
+    return event
   },
-  computed: {
-    event() {
-      return this.$store.state.event
-    }
-  }
 }
 </script>
 

@@ -46,8 +46,8 @@ export const useEventStore = defineStore('EventStore', {
         })
     },
     fetchEvent(id) {
-      console.log('fetchEvent');
       const existingEvent = this.events.find(event => event.id === id);
+      console.log('props')
       if (existingEvent) {
         return this.event = existingEvent
       }
