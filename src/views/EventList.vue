@@ -8,9 +8,7 @@ export default {
 
   setup() {
     const eventStore = useEventStore()
-
     const events = eventStore.fetchEvents()
-    console.log('events ', event)
 
     return {
       eventStore,
