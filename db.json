@@ -69,6 +69,16 @@
       "time": "02:00",
       "organizer": "Miguel Cassimiro",
       "id": "67580d4a-adf6-44e6-88e8-68e671ec7ef0"
+    },
+    {
+      "title": "Formula 1 - EUA",
+      "category": "sports",
+      "description": "Formula 1 2022 - Texas GP",
+      "location": "Texas - EUA",
+      "date": "10/16/2022",
+      "time": "02:00",
+      "organizer": "Miguel Cassimiro",
+      "id": "68ef4720-5735-443c-9748-cac49b3fb6da"
     }
   ]
 }

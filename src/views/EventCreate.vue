@@ -61,54 +61,6 @@ export default {
     }
     
   },
-
-  data() {
-    return {
-      categoriesTest: [
-        'sustainability',
-        'nature',
-        'animal welfare',
-        'housing',
-        'education',
-        'food',
-        'community'
-        
-      ],
-      event: {
-        id: '',
-        category: '',
-        title: '',
-        description: '',
-        location: '',
-        date: '',
-        time: '',
-        organizer: ''
-      }
-    }
-  },
-  methods: {
-    onSubmit() {
-      const event = {
-        ...this.event,
-        id: uuidv4(),
-        organizer: this.$store.state.user
-      }
-      this.$store
-        .dispatch('createEvent', event)
-        .then(() => {
-          this.$router.push({
-            name: 'EventDetails',
-            params: { id: event.id }
-          })
-        })
-        .catch(error => {
-          this.$router.push({
-            name: 'ErrorDisplay',
-            params: { error: error }
-          })
-        })
-    }
-  }
 }
 </script>
 
@@ -123,7 +75,7 @@ export default {
           v-for="option in categories"
           :value="option"
           :key="option"
-          :selected="option === event.category"
+          :selected="option === eventFormData.category"
         >
           {{ option }}
         </option>
