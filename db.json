@@ -29,6 +29,46 @@
       "date": "July 22, 2022",
       "time": "11:00",
       "organizer": "Carey Wales"
+    },
+    {
+      "id": "fc8a3261-322b-4196-9a78-9262c7dd6d2a",
+      "category": "food",
+      "title": "Mac & Cheese Recipe",
+      "description": "Learn how to make the incredible Mac& Cheese",
+      "location": "Brazil",
+      "date": "April 25, 2023",
+      "time": "12:00",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "id": "7a06f503-b34f-4f60-b3bf-618f9985f4f7",
+      "category": "animal welfare",
+      "title": "Cute Dogs",
+      "description": "See cute dogs",
+      "location": "Brazil",
+      "date": "June 16, 2022",
+      "time": "14:14",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "title": "Formula 1 Japan 2022",
+      "category": "sports",
+      "description": "Susuka GP 2022",
+      "location": "Susuka - Japan",
+      "date": "10/09/2022",
+      "time": "02:00",
+      "organizer": "Miguel Cassimiro",
+      "id": "a6384d0a-1b81-4d44-a886-84315d8ac3db"
+    },
+    {
+      "title": "Formula 1 - Brazil",
+      "category": "sports",
+      "description": "Formula 1 Interlagos GP",
+      "location": "Interlagos - GP",
+      "date": "11/13/2022",
+      "time": "02:00",
+      "organizer": "Miguel Cassimiro",
+      "id": "67580d4a-adf6-44e6-88e8-68e671ec7ef0"
     }
   ]
 }
